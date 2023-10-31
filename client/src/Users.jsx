@@ -6,14 +6,14 @@ function Users() {
     const [users,setUsers] = useState([])
     
     useEffect(()=> {
-        axios.get('http://localhost:5001')
+        axios.get('https://backend-mern-oh0g.onrender.com')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
 
     },[])
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:5001/deleteUser/'+id)
+        axios.delete('http://https://backend-mern-oh0g.onrender.com/deleteUser/'+id)
         .then(res => {console.log(res)
             window.location.reload()
         })

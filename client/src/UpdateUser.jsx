@@ -11,7 +11,7 @@ function CreateUser() {
     const navigate = useNavigate()
 
     useEffect(()=> {
-        axios.get('http://localhost:5001/getUser/'+id)
+        axios.get('http://https://backend-mern-oh0g.onrender.com/getUser/'+id)
         .then(result => {
             setName(result.data.name)
             setEmail(result.data.email)
