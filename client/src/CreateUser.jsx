@@ -11,7 +11,7 @@ function CreateUser() {
 
     const Submit = (e) => {
         e.preventDefault()
-        axios.post("http://https://backend-mern-oh0g.onrender.com/createUser", {name, email, age})
+        axios.post("https://nitulprojectbackend.onrender.com/createUser", {name, email, age})
         .then(result => {
             console.log(result)
             navigate('/')

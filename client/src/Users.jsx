@@ -6,14 +6,14 @@ function Users() {
     const [users,setUsers] = useState([])
     
     useEffect(()=> {
-        axios.get('https://backend-mern-oh0g.onrender.com')
+        axios.get('https://nitulprojectbackend.onrender.com')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
 
     },[])
 
     const handleDelete = (id) => {
-        axios.delete('http://https://backend-mern-oh0g.onrender.com/deleteUser/'+id)
+        axios.delete('https://nitulprojectbackend.onrender.com/deleteUser/'+id)
         .then(res => {console.log(res)
             window.location.reload()
         })

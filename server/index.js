@@ -6,10 +6,11 @@ const bodyparser = require("body-parser")
 
 const app = express()
 
+// "https://react-mern-0z59.onrender.com"
 
 app.use(cors(
     {
-        origin:"https://react-mern-0z59.onrender.com",
+        origin:"https://nitulproject.onrender.com",
         methods:["GET", "POST", "PUT","DELETE"],
         credentials:true
     }

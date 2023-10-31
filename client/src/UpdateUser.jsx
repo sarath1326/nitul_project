@@ -11,7 +11,7 @@ function CreateUser() {
     const navigate = useNavigate()
 
     useEffect(()=> {
-        axios.get('http://https://backend-mern-oh0g.onrender.com/getUser/'+id)
+        axios.get('https://nitulprojectbackend.onrender.com/getUser/'+id)
         .then(result => {
             setName(result.data.name)
             setEmail(result.data.email)
@@ -24,7 +24,7 @@ function CreateUser() {
 
     const Update = (e) => {
         e.preventDefault()
-        axios.put("http://localhost:5001/updateUser/"+id, {name, email, age})
+        axios.put("https://nitulprojectbackend.onrender.com/updateUser/"+id, {name, email, age})
         .then(result => {
             console.log(result)
             navigate('/')
