@@ -2,7 +2,6 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 const UserModel = require("./models/Users")
-const cookieparser = require("cookie-parser")
 const bodyparser = require("body-parser")
 
 const app = express()
@@ -21,7 +20,6 @@ app.use(express.urlencoded({extended:true}))
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended:true}))
 
-app.use(cookieparser())
 
 mongoose.connect("mongodb+srv://mnithul:Sathooo2@cluster0.urs1evf.mongodb.net/Crud" ,{
     useNewUrlParser: true,
