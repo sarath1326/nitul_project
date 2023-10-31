@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Users from './Users'
 import CreateUser from './CreateUser'
 import UpdateUser from './UpdateUser'
+import Home from './Home'
 
 
 function App() {
@@ -14,9 +15,12 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes> 
-        <Route path='/' element={<Users/>}></Route>
+        {/* <Route path='/' element={<Users/>}></Route>
           <Route path='/create' element={<CreateUser/>}></Route>
-          <Route path='/update/:id' element={<UpdateUser/>}></Route> 
+          <Route path='/update/:id' element={<UpdateUser/>}></Route>  */}
+ 
+              <Route element={<Home />} path='/' />
+
         </Routes>
       </BrowserRouter>
      
